@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from './Link';
 
 const Header = () => {
     const items = [
@@ -22,9 +23,9 @@ const Header = () => {
 
     const renderedItems = items.map(item => {
         return (
-            <a href={item.href} className="item">
+            <Link href={item.href} className="item">
                     {item.caption}
-                </a>
+                </Link>
         )
     })
     
